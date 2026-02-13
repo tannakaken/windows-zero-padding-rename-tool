@@ -25,6 +25,6 @@ reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\MyZeroPadding\command" /ve
 
 echo.
 echo [完了] 右クリックメニューに登録されました
-echo フォルダを右クリックすると「このフォルダで処理を実行」が表示されます
+echo フォルダを右クリックすると「ファイル名0埋め変換」が表示されます
 echo.
 pause
