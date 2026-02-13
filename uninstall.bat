@@ -4,7 +4,7 @@ echo  ファイル名0埋め変換メニュー削除ツール
 echo ==========================================
 echo.
 
-REM "管理者権限チェック"
+REM 管理者権限チェック
 net session >nul 2>&1
 if %errorlevel% neq 0 (
     echo [エラー] 管理者権限が必要です
@@ -13,7 +13,7 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
-REM "レジストリ削除"
+REM レジストリ削除
 reg delete "HKEY_CLASSES_ROOT\Directory\Background\shell\MyZeroPadding" /f
 
 echo.
