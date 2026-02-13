@@ -147,22 +147,21 @@ $button.Add_Click({
     }
     # 変換する桁数を取得
     $digits = [int]$textbox.Text
-    Write-Host "$digits"
+    Write-Host "Number of digits: $digits"
     if ($digits -gt 0) {
         foreach ($file in $files) {
             $fileName = $file.Name
-            Write-Host "$fileName"
+            Write-Host "File: $fileName"
             if ($fileName -match $pattern) {
                 $prefix = $Matches[1]
                 $index = [int]($Matches[2])
                 $extension = $Matches[3]
                 if (!$selectedPrefixes.Contains($prefix) -or !$selectedExtensions.Contains($extension)) {
-                     Write-Host "だめ  $$fileName"
                     continue
                 }
                 if ($index -ge 0) {
                     $newName = "$prefix{0:d$digits}$($file.Extension)" -f $index
-                    Write-Host "$$fileName -> $newName"
+                    Write-Host "$fileName -> $newName"
                     Rename-Item -Path $file.FullName -NewName $newName
                 }
             }
