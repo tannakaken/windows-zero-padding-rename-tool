@@ -1,23 +1,23 @@
-ï»¿@echo off
+@echo off
 chcp 65001 >nul
 echo "=========================================="
-echo " ãƒ•ã‚¡ã‚¤ãƒ«å0åŸ‹ã‚å¤‰æ›ãƒ¡ãƒ‹ãƒ¥ãƒ¼å‰Šé™¤ãƒ„ãƒ¼ãƒ«"
+echo " ƒtƒ@ƒCƒ‹–¼0–„‚ß•ÏŠ·ƒƒjƒ…[íœƒc[ƒ‹"
 echo "=========================================="
 echo.
 
-REM "ç®¡ç†è€…æ¨©é™ãƒã‚§ãƒƒã‚¯"
+REM "ŠÇ—ŽÒŒ ŒÀƒ`ƒFƒbƒN"
 net session >nul 2>&1
 if %errorlevel% neq 0 (
-    echo "[ã‚¨ãƒ©ãƒ¼] ç®¡ç†è€…æ¨©é™ãŒå¿…è¦ã§ã™"
-    echo "ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å³ã‚¯ãƒªãƒƒã‚¯â†’ã€Œç®¡ç†è€…ã¨ã—ã¦å®Ÿè¡Œã€ã—ã¦ãã ã•ã„"
+    echo "[ƒGƒ‰[] ŠÇ—ŽÒŒ ŒÀ‚ª•K—v‚Å‚·"
+    echo "‚±‚Ìƒtƒ@ƒCƒ‹‚ð‰EƒNƒŠƒbƒN¨uŠÇ—ŽÒ‚Æ‚µ‚ÄŽÀsv‚µ‚Ä‚­‚¾‚³‚¢"
     pause
     exit /b 1
 )
 
-REM "ãƒ¬ã‚¸ã‚¹ãƒˆãƒªå‰Šé™¤"
+REM "ƒŒƒWƒXƒgƒŠíœ"
 reg delete "HKEY_CLASSES_ROOT\Directory\Background\shell\MyZeroPadding" /f
 
 echo.
-echo "[å®Œäº†] å³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‹ã‚‰å‰Šé™¤ã•ã‚Œã¾ã—ãŸ"
+echo "[Š®—¹] ‰EƒNƒŠƒbƒNƒƒjƒ…[‚©‚çíœ‚³‚ê‚Ü‚µ‚½"
 echo.
 pause

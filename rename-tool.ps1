@@ -1,4 +1,4 @@
-Add-Type -AssemblyName System.Windows.Forms
+﻿Add-Type -AssemblyName System.Windows.Forms
 
 $path = if ($args[0] -and (Test-Path $args[0])) { $args[0] } else { Get-Location }
 
