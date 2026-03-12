@@ -117,7 +117,7 @@ $textbox = New-Object System.Windows.Forms.TextBox
 $textbox.Left = 10
 $textbox.Top = $yPosition
 $textbox.Width = 270
-$textbox.Text = "3"
+$textbox.Text = "4"
 $panel.Controls.Add($textbox)
 
 $yPosition += 30
